@@ -14,11 +14,6 @@ import { setSelectedPlace } from '../redux/slices/selectedPlaceSlice';
 import { setSuggestions } from '../redux/slices/suggestionsSlice';
 import { persistor, RootState, store } from '../redux/store';
 
-// .env required variables:
-// EXPO_PUBLIC_GOOGLE_API_KEY=your_key
-// EXPO_PUBLIC_PLACES_AUTOCOMPLETE_URL=https://maps.googleapis.com/maps/api/place/autocomplete/json
-// EXPO_PUBLIC_PLACE_DETAILS_URL=https://maps.googleapis.com/maps/api/place/details/json
-
 const GOOGLE_API_KEY = process.env.EXPO_PUBLIC_GOOGLE_API_KEY;
 const PLACES_AUTOCOMPLETE_URL = process.env.EXPO_PUBLIC_PLACES_AUTOCOMPLETE_URL;
 const PLACE_DETAILS_URL = process.env.EXPO_PUBLIC_PLACE_DETAILS_URL;

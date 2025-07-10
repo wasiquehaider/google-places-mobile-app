@@ -1,20 +1,35 @@
-# Welcome to your Expo app 👋
+# Google Places App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Getting Started
 
-## Get started
+### 1. Setup Environment Variables
 
-1. Install dependencies
+Create a `.env` file in your project root with the following variables:
 
-   ```bash
-   npm install
-   ```
+```
+EXPO_PUBLIC_GOOGLE_API_KEY=your_google_api_key_here
+EXPO_PUBLIC_PLACES_AUTOCOMPLETE_URL=https://maps.googleapis.com/maps/api/place/autocomplete/json
+EXPO_PUBLIC_PLACE_DETAILS_URL=https://maps.googleapis.com/maps/api/place/details/json
+```
 
-2. Start the app
+Replace `your_google_api_key_here` with your actual Google API key.
 
-   ```bash
-   npx expo start
-   ```
+### 2. Install Dependencies
+
+Run:
+
+```
+npx expo install react-native-maps @react-native-async-storage/async-storage
+npm install @reduxjs/toolkit react-redux redux-persist
+```
+
+### 3. Start the App
+
+Run:
+
+```
+npx expo start
+```
 
 In the output, you'll find options to open the app in a
 
@@ -36,23 +51,6 @@ The UI is built with a modular component approach for maintainability and reusab
 - react-redux
 - redux-persist
 - @react-native-async-storage/async-storage
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
 ## Join the community
 
